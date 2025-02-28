@@ -9,9 +9,9 @@ const Index = () => {
   return (
     <View style={style.container}>
       <Text style={style.title}>Olá, Igor!</Text>
-      <Button />
-      <Button />
-      <Button />
+      <Button title="Entrar" />
+      <Button title="Sair" />
+
     </View>
   );
 };
