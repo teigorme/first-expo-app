@@ -1,16 +1,17 @@
 import { View, Text, StyleSheet, Alert } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import Button from "@/components/button";
 import Input from "@/components/input";
 
 const Index = () => {
+  const [name, setName] = useState<string>("");
   function handleSendMessage() {
-    Alert.alert("Olá, Igor, seja bem-vindo!");
+    Alert.alert(`Olá, ${name} seja bem-vindo!`);
   }
   return (
     <View style={style.container}>
-      <Text style={style.title}>Olá, Igor!</Text>
-      <Input onChangeText={(text)=>console.log(text)}/>
+      <Text style={style.title}>Olá, {name}!</Text>
+      <Input onChangeText={setName} />
       <Button title="Continuar" onPress={handleSendMessage} />
     </View>
   );
