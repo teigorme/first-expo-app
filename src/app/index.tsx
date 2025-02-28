@@ -1,10 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button, Alert } from "react-native";
 import React from "react";
 
 const Index = () => {
+  function handleSendMessage() {
+    return Alert.alert("Olá, Igor!")
+  }
   return (
     <View style={style.container}>
-      <Text style={style.title}>Hello World!</Text>
+      <Text style={style.title}>Olá, Igor!</Text>
+      <Button title="Enviar mensagem" onPress={handleSendMessage}/>
     </View>
   );
 };
