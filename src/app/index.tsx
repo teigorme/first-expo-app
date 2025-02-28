@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <View style={style.container}>
       <Text style={style.title}>Olá, Igor!</Text>
-      <Button title="Entrar" />
+      <Button title="Entrar" onPress={handleSendMessage} />
       <Button title="Sair" />
 
     </View>
