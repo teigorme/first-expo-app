@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet, Alert } from "react-native";
 import React from "react";
-import Button from "../components/button";
+import Button from "@/components/button";
+import Input from "@/components/input";
 
 const Index = () => {
   function handleSendMessage() {
-    Alert.alert("Olá, Igor!");
+    Alert.alert("Olá, Igor, seja bem-vindo!");
   }
   return (
     <View style={style.container}>
       <Text style={style.title}>Olá, Igor!</Text>
-      <Button title="Entrar" onPress={handleSendMessage} />
-      <Button title="Sair" />
-
+      <Input onChangeText={(text)=>console.log(text)}/>
+      <Button title="Continuar" onPress={handleSendMessage} />
     </View>
   );
 };
@@ -21,7 +21,7 @@ const style = StyleSheet.create({
     flex: 1,
     padding: 32,
     justifyContent: "center",
-    gap:16
+    gap: 16,
   },
   title: {
     color: "red",
