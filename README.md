@@ -1,4 +1,4 @@
-# Welcome to my first Expo app 👋
+#### Welcome to my first Expo app 👋
 
 <img src="assets/images/app-image.png" width="500" height="auto" >
 
